@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace MyApp.Namespace
-{
+namespace QuizMvc.Controllers;
+
     public class LeaderboardController : Controller
     {
         // GET: LeaderboardController
@@ -11,4 +11,4 @@ namespace MyApp.Namespace
         }
 
     }
-}
+
