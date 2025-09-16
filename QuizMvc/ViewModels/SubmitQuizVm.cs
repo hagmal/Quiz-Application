@@ -7,16 +7,14 @@ namespace QuizMvc.ViewModels
     // The package that is POSTed from the form when the user submits their answers
     public class SubmitQuizVm
     {
+        // Hvilken quiz brukeren tok
         [Required] public int QuizId { get; set; }
 
-        // Vises i skjemaet - vi lagrer navnet på "scoreboardet"
-        // Shown in the form - we store the name on the "scoreboard"
+        // Vises i skjemaet - vi lagrer navnet på "leaderboardet"
         [Required, MinLength(2), MaxLength(20)] public string DisplayName { get; set; } = "";
 
         // Valgte svar fra skjemaet: QuestionId -> OptionId
-        // (HTML-navn "Answers[<QuestionId>]" binder automatisk til denne dictionary'en)
-        // Selected answers from the form: QuestionId -> OptionId
-        // (HTML name "Answers[<QuestionId>]" automatically binds to this dictionary)
+        // HTML-navn "Answers[<QuestionId>]" binder automatisk hit
         [Required] public Dictionary<int, int> Answers { get; set; } = new();
     }
 }

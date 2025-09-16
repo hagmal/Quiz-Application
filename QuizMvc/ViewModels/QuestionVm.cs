@@ -6,12 +6,9 @@ namespace QuizMvc.ViewModels
     // A question in a quiz that is shown to the user
     public class QuestionVm
     {
-        public int Id { get; set; }
-        public string Text { get; set; } = "";
-        public int Points { get; set; } = 1;
-        
-        // Mulige svar
-        // Possible answers
-        public List<OptionVm> Options { get; set; } = new();
+        public int Id { get; set; } // Unik ID for spørsmålet
+        public string Text { get; set; } = ""; //Spørsmåls-tekst
+        public int Points { get; set; } = 1; // Poeng for riktig svar
+        public List<OptionVm> Options { get; set; } = new(); // Mulige svar
     }
 }

@@ -6,8 +6,8 @@ namespace QuizMvc.ViewModels
     // The entire quiz as needed by the "Take quiz"-page
     public class TakeQuizVm
     {
-        public int QuizId { get; set; }
-        public string Title { get; set; } = "";
-        public List<QuestionVm> Questions { get; set; } = new();
+        public int QuizId { get; set; } // Hvilken quiz det er
+        public string Title { get; set; } = ""; // TIttel vises i UI
+        public List<QuestionVm> Questions { get; set; } = new(); // Spørsmålene
     }
 }

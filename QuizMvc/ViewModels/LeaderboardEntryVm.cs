@@ -6,10 +6,9 @@ namespace QuizMvc.ViewModels
     // What one row on the leaderboard looks like
     public class
     {
-        public string DisplayName { get; set; } = "";
-        public int Score { get; set; }
-        // Når resultatet ble postet
-        // When the result was posted
-        public DateTime SubmittedAt { get; set; }
+        public string DisplayName { get; set; } = ""; // Brukernavn/alias
+        public int Score { get; set; } // poengsum
+        
+        public DateTime SubmittedAt { get; set; } // Tidspunkt for innsending
     }
 }
