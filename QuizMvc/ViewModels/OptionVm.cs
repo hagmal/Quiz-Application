@@ -8,6 +8,6 @@ namespace QuizMvc.ViewModels
         public string Text { get; set; } = "";
         // Bruker kun til scoring på server (vises ikke i UI)
         // Used only for scoring on the server (do not display in the UI)
-        public bool IsCorrect { get; set; } 
+        public bool IsCorrect { get; set; }
     }
 }
