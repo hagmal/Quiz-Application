@@ -5,8 +5,6 @@ using System.Threading.Tasks;
 
 namespace QuizMvc.Controllers;
 
-namespace QuizMvc.Controllers
-{
     public class TakeController : Controller
     {
         private readonly IQuizRepository _quizRepo; // Interfacet for å hente quiz
